@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stddef.h>  // for size_t
-
+#include "lists.h"
 typedef struct list {
     char *str;
     struct list *next;
