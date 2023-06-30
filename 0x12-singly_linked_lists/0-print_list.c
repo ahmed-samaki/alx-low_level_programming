@@ -1,10 +1,5 @@
 #include <stdio.h>
-#include <stddef.h>  // for size_t
 #include "lists.h"
-typedef struct list {
-    char *str;
-    struct list *next;
-} list_t;
 
 size_t print_list(const list_t *h) {
     size_t count = 0;
