@@ -1,23 +1,22 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 
-
 /**
-* list_len - check the code for ALX School students.
-* @head: name of the list
-* Return: the number of nodes.
-*/
-size_t list_len(const list_t *head)
+ * list_len - Finds the number of elements in
+ *            a linked list_t list.
+ * @h: The linked list_t list.
+ * @elements: a counter var for size_t (nodes)
+ *
+ * Return: The number of elements in h.
+ */
+size_t list_len(const list_t *h)
 {
-   int counter = 0;
+	size_t elements = 0;
 
+	while (h)
+	{
+		elements++;
+		h = h->next;
+	}
 
-   while (head)
-   {
-       counter++;
-       head = head->next;
-   }
-   return (counter);
+	return (elements);
 }
